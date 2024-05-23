@@ -1,0 +1,140 @@
+body{
+    /* background-image: url(https://th.bing.com/th/id/R.2bc9c95fad257ac4f2f72f03d426d193?rik=DGMjZ3Diw9ApUA&pid=ImgRaw&r=0); */
+    background-image: url(https://th.bing.com/th/id/OIP.uQJEWL64fUu-59KYQuK83wHaDS?w=316&h=155&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    font-size: 100px;
+    /*background: wheat;*/
+    color: #f8eeac;
+    background: transparent;
+    text-align: center;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
+
+header:hover{
+    color: #a27a5859;
+    transition: 0.5s;
+}
+
+/*The main container without the heading */
+.container{
+    /*background: linear-gradient(45deg, blueviolet, lightgreen );/*Double color for the background*/
+    background: transparent;
+    padding: 15px 9%; /*By adding a purcentage value there will be more padding*/
+    padding-bottom:100%;/*the background will take the all page*/
+    text-align: center;
+}
+
+#button_and_input{
+    height: 40px;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#add-list-button{
+    background: rgb(236, 225, 205);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    border: none;
+}
+
+
+
+/*The container where the boxes are*/
+.box-container{
+    display:grid; /*All these 3 lines of codes display the content of a container as grid*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+
+}
+
+/**The single box*/
+.box{
+    background: #fff;
+    text-align: center;/*To place the content in the center*/
+    border-radius: 5px;
+
+}
+/*The div where the task and the delete button are*/
+.task{
+    background: #1db0e659;
+    border-radius: 15px;
+    display: flex;
+    cursor:auto;
+    margin: 2px;
+    justify-content: center;
+
+    
+}
+
+p{
+    font-size: 20px;
+    color: rgb(167, 105, 11);
+}
+
+/*The container where the taks are*/
+.tasks{
+    padding: 5px;
+    margin:5px;
+    border-radius:10px;
+    position: relative;
+    background: transparent;
+}
+
+.is-dragging{
+    scale:1.05;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.25);
+    background: wheat;
+    color: blueviolet;
+}
+
+.div-button{
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    font-size: 15px;
+    background: #1db0e659;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius:10px ;
+    border: none;
+    width: auto;
+    padding: 5px;
+}
+
+input{
+    height: 20px;
+    border: 2px solid #f3c1c1;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 0px 15px;
+    font-size: 15px;
+
+}
+
+#add-list{
+    height: 30px;
+
+    border: none;
+    padding: 0 20px;
+}
+
+
+
+
